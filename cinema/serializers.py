@@ -1,17 +1,15 @@
 from rest_framework import serializers
 from cinema.models import Movie
 
+
 class MovieSerializer(serializers.Serializer):
     pk = serializers.IntegerField(read_only=True)
     title = serializers.CharField(
         max_length=255,
-        required=False
     )
     description = serializers.CharField(
-        required=False
     )
     duration = serializers.IntegerField(
-        required=False
     )
 
     def create(self, validated_data):

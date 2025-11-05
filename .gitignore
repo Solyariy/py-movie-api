@@ -3,5 +3,5 @@
 sqlite3
 db.sqlite3
 .pytest_cache/
-**__pycache__/
+**/__pycache__
 **db.sqlite3
